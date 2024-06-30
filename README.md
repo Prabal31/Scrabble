@@ -27,7 +27,7 @@ The Scrabble Game Data Processor is designed to track the words played by each p
 
     ```bash
     git clone (https://github.com/Prabal31/Scrabble.git)
-    cd scrabble-game-processor
+    cd scrabble
     ```
 
 3. **Run the script:**
