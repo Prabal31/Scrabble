@@ -19,7 +19,7 @@ The Scrabble Game Data Processor is designed to track the words played by each p
 
 ## Requirements
 
-- Python 3.x
+- Python 3
 
 ## Setup
 
