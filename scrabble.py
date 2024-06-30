@@ -6,4 +6,10 @@ letter_to_points={key:values for key, values in zip(letters,points)}
 letter_to_points[""]=0
 print(letter_to_points)
 
-#def score_word(word):
+def score_word(word):
+  point_total=0
+  for letters in word:
+    point_total+=letter_to_points.get(letters.upper(), 0)
+  print(point_total)
+
+score_word("PRABH")
