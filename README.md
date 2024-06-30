@@ -10,10 +10,8 @@ This project processes data from a group of friends playing Scrabble. The primar
 2. [Requirements](#requirements)
 3. [Setup](#setup)
 4. [Data Structure](#data-structure)
-5. [Functionality](#functionality)
-6. [Extensions](#extensions)
-7. [Contributing](#contributing)
-8. [License](#license)
+5. [Extensions](#extensions)
+6. [Contributing](#contributing)
 
 ## Introduction
 
@@ -28,7 +26,7 @@ The Scrabble Game Data Processor is designed to track the words played by each p
 1. **Clone the repository:**
 
     ```bash
-    git clone <repository-url>
+    git clone (https://github.com/Prabal31/Scrabble.git)
     cd scrabble-game-processor
     ```
 
@@ -56,45 +54,6 @@ points = {
     'O': 1, 'P': 3, 'Q': 10, 'R': 1, 'S': 1, 'T': 1, 'U': 1,
     'V': 4, 'W': 4, 'X': 8, 'Y': 4, 'Z': 10
 }
-```
-
-## Functionality
-
-### Calculate Word Score
-
-This function calculates the score for a given word based on Scrabble letter values.
-
-```python
-def calculate_word_score(word):
-    score = 0
-    for letter in word:
-        score += points.get(letter.upper(), 0)
-    return score
-```
-
-### Add a Word for a Player
-
-This function adds a word to a player's list and updates their score.
-
-```python
-def add_word(player, word):
-    if player in players:
-        players[player].append(word)
-    else:
-        players[player] = [word]
-```
-
-### Calculate Total Score for a Player
-
-This function calculates the total score for a given player based on their words.
-
-```python
-def calculate_total_score(player):
-    total_score = 0
-    for word in players.get(player, []):
-        total_score += calculate_word_score(word)
-    return total_score
-```
 
 ## Extensions
 
@@ -109,10 +68,5 @@ Here are some ideas to extend the functionality of this project:
 
 Contributions are welcome! Please open an issue or submit a pull request with any improvements or suggestions.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more information.
-
----
 
 Happy Coding!
