@@ -10,6 +10,14 @@ def score_word(word):
   point_total=0
   for letters in word:
     point_total+=letter_to_points.get(letters.upper(), 0)
-  print(point_total)
+  return point_total
 
-score_word("PRABH")
+brownie_points=score_word("BROWNIE")
+print(brownie_points)
+
+player_to_words = {
+    'player1': ['BLUE', 'TENNIS', 'EXIT'],
+    'wordNerd': ['EARTH', 'EYES', 'MACHINE'],
+    'Lexi Con': ['ERASER', 'BELLY', 'HUSKY'],
+    'Prof Reader': ['ZAP', 'COMA', 'PERIOD']
+}
